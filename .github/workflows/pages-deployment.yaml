@@ -1,3 +1,4 @@
+# TODO: include worker deployment
 name: Deploy Blog Builder
 on: 
   push:
@@ -25,5 +26,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: blog-builder
-          directory: ./dist/blog-builder/browser
+          directory: ./client/dist/blog-builder/browser
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
