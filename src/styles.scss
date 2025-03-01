@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --primary-red: #990011;
+  --secondary-red: #DB4040;
+  --gradient-red: linear-gradient(to right, #DB4040, #990011);
+  --primary-black: #1D1616;
+  --primary-grey: #3C3D37;
+  --primary-cherry-off-white: #FCF6F5;
+}
+
+body {
+  background: var(--primary-black);
+  color: var(--primary-cherry-off-white);
+}

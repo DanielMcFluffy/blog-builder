@@ -1,0 +1,12 @@
+<header>
+  <nav class="primary">
+    @for (t of [].constructor(4); track $index) {
+      <app-header-tab></app-header-tab>
+    }
+  </nav>
+  <nav class="secondary">
+    @for (t of [].constructor(2); track $index) {
+      <app-header-tab></app-header-tab>
+    }
+  </nav>
+</header>

@@ -1,0 +1,14 @@
+<main>
+  <section>
+    @for (b of blogs; track b.id) {
+      <app-blog-card
+        [routerLink]="'blog/' + b.id.toString()"
+        [blog]="b" 
+      ></app-blog-card>
+    }
+  </section>
+  <section>
+    pagination
+  </section>
+</main>
+

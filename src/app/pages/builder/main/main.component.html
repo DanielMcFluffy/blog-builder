@@ -1,0 +1,11 @@
+<div>
+  Blogs Created:
+</div>
+<div>
+  @for (b of blogs; track b.id) {
+    <app-blog-card
+      [routerLink]="b.id.toString()"
+      [blog]="b"
+    ></app-blog-card>
+  }
+</div>

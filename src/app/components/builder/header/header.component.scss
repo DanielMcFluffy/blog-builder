@@ -1,0 +1,10 @@
+@use 'styles';
+
+:host {
+  @include styles.builder-header;
+
+  nav {
+    display: flex;
+  }
+
+}
